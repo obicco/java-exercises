@@ -27,7 +27,7 @@ public class Main {
         System.out.println("Busted MIN value = " + (minIntValue - 1) + " --> This is an underflow\n");
 
         //64bits
-        long number_2 = 100L; //put at the end 'L' to show that is a long value
+        long number_2 = 100L; //put at the end 'L' to identify that is a long value
         long minLongValue = Long.MIN_VALUE;
         long maxLongValue = Long.MAX_VALUE;
         System.out.println("LONG - 64 bits\nThe minimum long value is " + minLongValue + "\nThe maximum long value is " + maxLongValue);
