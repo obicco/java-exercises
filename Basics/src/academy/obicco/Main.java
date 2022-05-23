@@ -5,7 +5,7 @@ public class Main {
 
         int number_1 = 10 + 5;
 
-        // 8bits
+        //8bits
         byte minByteValue = Byte.MIN_VALUE;
         byte maxByteValue = Byte.MAX_VALUE;
         System.out.println("BYTE - 8 bits\nThe minimum byte value is " + minByteValue + "\nThe maximum byte value is " + maxByteValue);
@@ -39,12 +39,12 @@ public class Main {
         //FLOAT - Single precision number occupies 32 bits
         float minFloatValue = Float.MIN_VALUE;
         float maxFloatValue = Float.MAX_VALUE;
-        System.out.println("FLOAT - 32 bits\nThe minimum float value is " + minFloatValue + "\nThe maximum float value is " + maxFloatValue);
+        System.out.println("FLOAT - 32 bits\nThe minimum float value is " + minFloatValue + "\nThe maximum float value is " + maxFloatValue + "\n");
 
         //DOUBLE - Double precision number occupies 64 bits | Prefer to use nowadays than float
         double minDoubleValue = Double.MIN_VALUE;
         double maxDoubleValue = Double.MAX_VALUE;
-        System.out.println("DOUBLE - 64 bits\nThe minimum double value is " + minDoubleValue + "\nThe maximum double value is " + maxDoubleValue);
+        System.out.println("DOUBLE - 64 bits\nThe minimum double value is " + minDoubleValue + "\nThe maximum double value is " + maxDoubleValue + "\n");
     }
 
 }
