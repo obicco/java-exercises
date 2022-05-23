@@ -33,6 +33,18 @@ public class Main {
         System.out.println("LONG - 64 bits\nThe minimum long value is " + minLongValue + "\nThe maximum long value is " + maxLongValue);
         System.out.println("Busted MAX value = " + (maxLongValue + 1) + " --> This is an overflow");
         System.out.println("Busted MIN value = " + (minLongValue - 1) + " --> This is an underflow\n");
+
+        byte byte_1 = (byte) (minByteValue / 2); //Casting adaptable to all data types other than int because it's the default one
+
+        //FLOAT - Single precision number occupies 32 bits
+        float minFloatValue = Float.MIN_VALUE;
+        float maxFloatValue = Float.MAX_VALUE;
+        System.out.println("FLOAT - 32 bits\nThe minimum float value is " + minFloatValue + "\nThe maximum float value is " + maxFloatValue);
+
+        //DOUBLE - Double precision number occupies 64 bits | Prefer to use nowadays than float
+        double minDoubleValue = Double.MIN_VALUE;
+        double maxDoubleValue = Double.MAX_VALUE;
+        System.out.println("DOUBLE - 64 bits\nThe minimum double value is " + minDoubleValue + "\nThe maximum double value is " + maxDoubleValue);
     }
 
 }
