@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8028b467-0ec9-4ecf-8095-47dba15faab8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Basics/academy/obicco/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basics/academy/obicco/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/academy/obicco/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/academy/obicco/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1653227690920</updated>
       <workItem from="1653227692132" duration="144000" />
-      <workItem from="1653228089078" duration="4529000" />
+      <workItem from="1653228089078" duration="5841000" />
     </task>
     <servers />
   </component>

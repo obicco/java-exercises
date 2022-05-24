@@ -45,6 +45,23 @@ public class Main {
         double minDoubleValue = Double.MIN_VALUE;
         double maxDoubleValue = Double.MAX_VALUE;
         System.out.println("DOUBLE - 64 bits\nThe minimum double value is " + minDoubleValue + "\nThe maximum double value is " + maxDoubleValue + "\n");
+
+        //CHAR 16bits because of unicode characters
+        char myChar = 'D';
+        char unicodeChar = '\u0044'; //Unicode that stands for char D
+        char myCopyRight ='\u00A9';
+
+        System.out.println(myChar);
+        System.out.println(unicodeChar);
+        System.out.println(myCopyRight + "\n");
+
+        //BOOLEAN allows true/false or yes/no or 1/0
+        boolean trueValue = true;
+        boolean falseValue = false;
+
+        boolean isCustomerOverTwentyOne = true; //Example of use and naming
+
+        //STRING
     }
 
 }
