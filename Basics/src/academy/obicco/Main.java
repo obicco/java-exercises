@@ -51,9 +51,9 @@ public class Main {
         char unicodeChar = '\u0044'; //Unicode that stands for char D
         char myCopyRight ='\u00A9';
 
-        System.out.println(myChar);
-        System.out.println(unicodeChar);
-        System.out.println(myCopyRight + "\n");
+        System.out.println("Standard char: " + myChar);
+        System.out.println("Unicode char: " + unicodeChar);
+        System.out.println("Unicode symbol: " + myCopyRight + "\n");
 
         //BOOLEAN allows true/false or yes/no or 1/0
         boolean trueValue = true;
@@ -67,12 +67,34 @@ public class Main {
         myString = myString + ", and this is more"; //adding text to string variable
         System.out.println("My string is equal to " + myString);
         myString = myString + " \u00A9 2022";
-        System.out.println("My string is equal to " + myString);
+        System.out.println("My string is equal to " + myString + "\n");
         //If you add an int to a String, Java automatically adds it as a text
         //Strings are immutable, when I add something a new String is created and the old one is discarded from memory
 
+        //CONDITIONAL LOGIC
+        boolean isAlien = false;
+
+        if (!isAlien)
+            System.out.println("It is not an alien!");
+        else System.out.println("It's an alien");
 
 
+        int topScore = 80;
+        int secondTopScore = 60;
+        if (topScore > secondTopScore && topScore < 100) { //AND Operator
+            System.out.println("You got the high score!");
+        }
+
+        if (topScore > 90 || topScore <= 90) { //OR Operator
+            System.out.println("Either or both of the conditions are true");
+        }
+
+        //TERNARY OPERATOR
+        boolean isCar = false;
+        boolean wasCar = isCar ? true : false; //First (isCar == true) is the condition, assigns the second operator if it's ture or the third one if it's false, like for if/then/else
+        if (wasCar) {
+            System.out.println("wasCar is true");
+        }
     }
 
 }
