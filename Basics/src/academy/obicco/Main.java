@@ -61,7 +61,18 @@ public class Main {
 
         boolean isCustomerOverTwentyOne = true; //Example of use and naming
 
-        //STRING
+        //STRING - datatype Class
+        String myString = "This is a string";
+        System.out.println("My string is equal to " + myString);
+        myString = myString + ", and this is more"; //adding text to string variable
+        System.out.println("My string is equal to " + myString);
+        myString = myString + " \u00A9 2022";
+        System.out.println("My string is equal to " + myString);
+        //If you add an int to a String, Java automatically adds it as a text
+        //Strings are immutable, when I add something a new String is created and the old one is discarded from memory
+
+
+
     }
 
 }
