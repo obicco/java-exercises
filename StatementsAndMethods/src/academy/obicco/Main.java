@@ -1,5 +1,7 @@
+package academy.obicco;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        double kilometers = 100 * 1.609344;
     }
 }
