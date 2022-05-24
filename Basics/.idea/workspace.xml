@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8028b467-0ec9-4ecf-8095-47dba15faab8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basics/academy/obicco/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basics/academy/obicco/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/academy/obicco/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/academy/obicco/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,16 +28,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.appearance"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.appearance&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="academy.obicco.Main" />
@@ -69,7 +67,8 @@
       <option name="presentableId" value="Default" />
       <updated>1653227690920</updated>
       <workItem from="1653227692132" duration="144000" />
-      <workItem from="1653228089078" duration="8851000" />
+      <workItem from="1653228089078" duration="9055000" />
+      <workItem from="1653425960324" duration="66000" />
     </task>
     <servers />
   </component>
