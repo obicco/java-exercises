@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=spring-boot-data-jpa/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.obicco.calculator{SimpleCalculator.java[SimpleCalculator" modifiers="1" timestamp="1664464801000"/>
+    <typeInfo handle="=spring-boot-data-jpa/src\/test\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/&lt;com.obicco.calculator{CalcuatorTests.java[CalculatorTest" modifiers="0" timestamp="1664464900000"/>
+</typeInfoHistroy>

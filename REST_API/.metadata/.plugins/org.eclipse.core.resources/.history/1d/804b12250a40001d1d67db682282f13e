@@ -1,0 +1,47 @@
+package com.obicco.calculator;
+
+import java.util.Random;
+
+public class SimpleCalculator {
+	private String model = "GET from DB";
+	private CalculatorLogger logger = new CalculatorLogger();
+	
+	
+	public int add (int numberA, int numberB) {
+		logger.log(true);
+		return numberA + numberB;
+	}
+	
+	// Returns true if Even, false if odd
+	public boolean isEven(int number) {
+		if (number % 2 == 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public int divide(int numberA, int numberB) throws Exception {
+		try {
+			return numberA/numberB;
+		} catch (ArithmeticException e) {
+			throw(new Exception("Division by 0 not possible"));
+		}
+	}
+	
+	public String printModel (Integer modelNumber) {
+		switch (modelNumber) {
+		case 1: {
+			return "CASIO model 123 year 2022";
+		}
+		case 2: {
+			return "CASIO model 456 year 2021";
+		}
+		default:
+			return model;
+		}
+		
+	}
+	
+
+}

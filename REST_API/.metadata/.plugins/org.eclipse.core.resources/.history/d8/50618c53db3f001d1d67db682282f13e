@@ -1,0 +1,32 @@
+package com.obicco.calculator;
+
+
+public class SimpleCalculator {
+	
+	public int add (int numberA, int numberB) {
+		return numberA + numberB;
+	}
+	
+	// Returns true if Even, false if odd
+	public boolean isEven(int number) {
+		if (number % 2 == 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public int divide(int numberA, int numberB) throws Exception {
+		try {
+			return numberA/numberB;
+		} catch (ArithmeticException e) {
+			throw(new Exception("Division by 0 not possible"));
+		}
+	}
+	
+	public void printModel() {
+		System.out.println("CASIO model 123 year 2022");
+	}
+	
+
+}

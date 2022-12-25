@@ -1,0 +1,55 @@
+package com.obicco.calculator;
+
+import java.util.Random;
+import java.util.regex.Pattern;
+
+public class SimpleCalculator {
+	private String model = "GET from DB";
+	private CalculatorLogger logger = new CalculatorLogger();
+	
+	
+	public int add (int numberA, int numberB) {
+		logger.log(true);
+		return numberA + numberB;
+	}
+	
+	// Returns true if Even, false if odd
+	public boolean isEven(int number) {
+		if (number % 2 == 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public int divide(int numberA, int numberB) throws Exception {
+		try {
+			return numberA/numberB;
+		} catch (ArithmeticException e) {
+			logger.log(false);
+			throw(new Exception("Division by 0 not possible"));
+		}
+	}
+	
+	public String printModel (Integer modelNumber) {
+		switch (modelNumber) {
+		case 1: {
+			return "CASIO model 123 year 2022";
+		}
+		case 2: {
+			return "CASIO model 456 year 2021";
+		}
+		default:
+			return model;
+		}
+		
+	}
+	
+	private static final String PHONE_REGEX_PATTERN = "(^(\\(?(((\\+)|00)39)?\\)?(3)(\\d{8,9}))$)";
+	
+	public static boolean isValidPhoneNumber(String phoneNumber) {
+	    return (phoneNumber != null && Pattern.matches(PHONE_REGEX_PATTERN, phoneNumber));
+	}
+	
+
+}

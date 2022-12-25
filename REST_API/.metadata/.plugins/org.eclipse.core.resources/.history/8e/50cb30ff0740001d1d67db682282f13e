@@ -1,0 +1,9 @@
+package com.obicco.calculator;
+
+public class CalculatorLogger {
+	
+	public void logger() {
+		System.out.println("Everything working fine...");
+	}
+
+}

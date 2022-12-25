@@ -1,0 +1,76 @@
+package com.obicco.calculator;
+
+//Junit
+import org.junit.jupiter.api.Test;
+import java.lang.reflect.*;
+import org.junit.jupiter.api.BeforeEach;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+
+//Junit per Test Parametrici
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
+import org.junit.jupiter.params.provider.CsvSource;
+
+	// AssertJ
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
+
+	// Mockito
+import org.mockito.Mock;
+import org.mockito.InjectMocks;
+import org.mockito.MockitoAnnotations;
+
+import com.obicco.calculator.SimpleCalculator;
+
+import static org.mockito.Mockito.when;
+import static org.mockito.ArgumentMatchers.any;
+
+class CalculatorTest {
+	
+	@Mock
+	private CalculatorLogger logger;
+	
+	@InjectMocks
+	private SimpleCalculator calculator;
+	
+	@BeforeEach
+	void init() {
+		calculator = new SimpleCalculator();
+	}
+
+	@Test
+	void testAdd() {
+		MockitoAnnotations.openMocks(this);
+		when(logger.log(true)).thenReturn("Bypassing logger");
+		assertThat(calculator.add(10, 15)).isEqualTo(25);
+	}
+	
+	@Test
+	void testEvenOdd() {
+		assertThat(calculator.isEven(10)).isTrue();
+		assertThat(calculator.isEven(7)).isFalse();
+	}
+	
+	@Test
+	void testDivision() throws Exception {
+		assertThat(calculator.divide(10, 10)).isNotNull();
+		assertThatThrownBy(() -> calculator.divide(10, 0)).hasMessageContaining("not possible");
+	}
+	
+	@Test
+	void testPrintModel() throws Exception {
+		final Method method = SimpleCalculator.class.getDeclaredMethod("printModel", Integer.class);
+		final Field model = calculator.getClass().getDeclaredField("model");
+		model.setAccessible(true);
+		model.set(calculator, "SHARP");
+		
+		assertThat(method.invoke(calculator, 0)).isEqualTo("SHARP");
+	}
+	
+	@Test
+	void testPhone() {
+		assertThat(SimpleCalculator.isValidPhoneNumber("+393485573665"));
+	}
+
+}

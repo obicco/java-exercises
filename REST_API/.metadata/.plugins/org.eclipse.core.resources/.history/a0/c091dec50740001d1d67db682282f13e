@@ -1,0 +1,5 @@
+package com.obicco.calculator;
+
+public class CalculatorLogger {
+
+}
